@@ -1,8 +1,14 @@
-package CreationalDP.FactoryDP;
+package CreationalDP.Abstract_FactoryDP;
 
-public class ShapeFactory {
+public class ShapeFactory extends AbstractFactory{
 
-    public Shape getShape(String shapeType){
+    @Override
+    Color getColor(String color) {
+        return null;
+    }
+
+    @Override
+    Shape getShape(String shapeType){
 
         if(shapeType==null){
             return null;
